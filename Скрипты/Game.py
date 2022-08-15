@@ -33,11 +33,14 @@ def start():
         mouse_visible = True
         mouse_set_visible = pg.mouse.set_visible( mouse_visible )
 
-        screen.blit(  bg_image, ( 0 ,0 ) )
-        screen.blit( button.image , ( 800 / 2  - button.width / 2  ,120 ) )
-        screen.blit( button.image , ( 800 / 2  - button.width / 2 ,180 ) )
-        screen.blit( button.image , (  800 / 2  - button.width / 2,250 ) )
-        screen.blit( button.image , ( 800 / 2  - button.width / 2 ,310 ) )
+        screen.blit(  bg_image, ( 0 , 0 ) )
+
+        screen.blit( button.image , ( int(screen_width) / 2  - button.width / 2  , 100 ) )
+        screen.blit( button.image , ( int(screen_width) / 2  - button.width / 2  , 150 ) )
+        screen.blit( button.image , ( int(screen_width) / 2  - button.width / 2  , 200 ) )
+        screen.blit( button.image , ( int(screen_width) / 2  - button.width / 2  , 250 ) )
+        screen.blit( button.image , ( int(screen_width) / 2  - button.width / 2  , 300 ) )
+
 
     if game_status == 'play':
 
